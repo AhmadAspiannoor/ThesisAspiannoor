@@ -10,7 +10,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>SB Admin 2 - Dashboard</title>
+    <title>@yield('title')</title>
 
     <!-- Custom fonts for this template-->
     <link href="{{asset('assets/vendor/fontawesome-free/css/all.min.css')}}" rel="stylesheet" type="text/css">
@@ -20,6 +20,7 @@
     <!-- Custom styles for this template-->
     {{-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous"> --}}
     <link href="{{asset('assets/css/sb-admin-2.min.css')}}" rel="stylesheet">
+    <link rel="stylesheet" href="{{asset('mycostumecss.css')}}">
 
     @yield('script')
 
@@ -30,14 +31,14 @@
     <div id="wrapper">
 
         <!-- Sidebar -->
-        <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
+        <ul class="navbar-nav sidebar sidebar-dark accordion" style="background-color: #ff7171" id="accordionSidebar">
 
             <!-- Sidebar - Brand -->
             <a class="sidebar-brand d-flex align-items-center justify-content-center" href="index.html">
                 <div class="sidebar-brand-icon rotate-n-15">
-                    <i class="fas fa-laugh-wink"></i>
+                    <i class="fas fa-venus-mars"></i>
                 </div>
-                <div class="sidebar-brand-text mx-3">Akar</div>
+                <div class="sidebar-brand-text mx-2">Sistem Reproduksi Manusia</div>
             </a>
 
             <!-- Divider -->
@@ -46,13 +47,35 @@
             <!-- Nav Item - Dashboard -->
             <li class="nav-item">
                 <a class="nav-link" href="">
-                    <i class="fas fa-fw fa-tachometer-alt"></i>
-                    <span>Dashboard</span></a>
+                    <i class="fas fa-campground"></i>
+                    <span>Panduan</span></a>
             </li>
             <li class="nav-item ">
                 <a class="nav-link" href="">
-                    <i class="fas fa-fw fa-tachometer-alt"></i>
-                    <span>list</span></a>
+                    <i class="fas fa-chalkboard-teacher"></i>
+                    <span>KI | KD</span></a>
+            </li>
+            {{-- nav item collapse --}}
+            <li class="nav-item">
+                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseTwo"
+                    aria-expanded="true" aria-controls="collapseTwo">
+                    <i class="fas fa-book"></i>
+                    <span>Mata Pelajaran</span>
+                </a>
+                <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
+                    <div class="bg-white py-2 collapse-inner rounded">
+                        <h6 class="collapse-header">Materi :</h6>
+                        <a class="collapse-item" href="buttons.html">Materi 1</a>
+                        <a class="collapse-item" href="cards.html">Materi 2</a>
+                        <a class="collapse-item" href="cards.html">Materi 3</a>
+                    </div>
+                </div>
+            </li>
+
+            <li class="nav-item ">
+                <a class="nav-link" href="">
+                    <i class="fas fa-address-card"></i>
+                    <span>Tentang Kita</span></a>
             </li>
 
             <!-- Divider -->
@@ -78,7 +101,19 @@
                     <button id="sidebarToggleTop" class="btn btn-link d-md-none rounded-circle mr-3">
                         <i class="fa fa-bars"></i>
                     </button>
+
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a href="" class="nav-link"><i class="fas fa-home fa-2x" id="home-icon"></i></a>
+                        </li>
+                    </ul>
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a href="" class="nav-link"><i class="fas fa-envelope-open-text fa-2x" id="home-icon"></i></a>
+                        </li>
+                    </ul>
                 </nav>
+
                 <!-- End of Topbar -->
 
                 <!-- Begin Page Content -->
@@ -94,7 +129,7 @@
             <footer class="sticky-footer bg-white">
                 <div class="container my-auto">
                     <div class="copyright text-center my-auto">
-                        <span>Copyright &copy; Your Website 2020</span>
+                        <span>Copyright &copy; Thesis Universitas Lambung Mangkurat</span>
                     </div>
                 </div>
             </footer>
