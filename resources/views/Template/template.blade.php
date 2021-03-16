@@ -31,14 +31,14 @@
     <div id="wrapper">
 
         <!-- Sidebar -->
-        <ul class="navbar-nav sidebar sidebar-dark accordion" style="background-color: #ff7171" id="accordionSidebar">
+        <ul class="navbar-nav sidebar sidebar-dark accordion" style="background-color: #00af91" id="accordionSidebar">
 
             <!-- Sidebar - Brand -->
             <a class="sidebar-brand d-flex align-items-center justify-content-center" href="index.html">
                 <div class="sidebar-brand-icon rotate-n-15">
-                    <i class="fas fa-venus-mars"></i>
+                    <i class="fas fa-calculator"></i>
                 </div>
-                <div class="sidebar-brand-text mx-2">Sistem Reproduksi Manusia</div>
+                <div class="sidebar-brand-text mx-2">Operasi Bilangan Pecahan</div>
             </a>
 
             <!-- Divider -->
@@ -47,24 +47,24 @@
             <!-- Nav Item - Dashboard -->
             <li class="nav-item">
                 <a class="nav-link" href="">
-                    <i class="fas fa-campground"></i>
-                    <span>Panduan</span></a>
+                    <i class="fas fa-campground" id="sidebar-icon"></i>
+                    <span id="sidebar-span">Panduan</span></a>
             </li>
             <li class="nav-item ">
                 <a class="nav-link" href="">
-                    <i class="fas fa-chalkboard-teacher"></i>
-                    <span>KI | KD</span></a>
+                    <i class="fas fa-chalkboard-teacher" id="sidebar-icon"></i>
+                    <span id="sidebar-span">KI | KD</span></a>
             </li>
             {{-- nav item collapse --}}
             <li class="nav-item">
                 <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseTwo"
                     aria-expanded="true" aria-controls="collapseTwo">
-                    <i class="fas fa-book"></i>
-                    <span>Mata Pelajaran</span>
+                    <i class="fas fa-book" id="sidebar-icon"></i>
+                    <span id="sidebar-span">Mata Pelajaran</span>
                 </a>
                 <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
                     <div class="bg-white py-2 collapse-inner rounded">
-                        <h6 class="collapse-header">Materi :</h6>
+                        <h6 class="collapse-header" id="sidebar-span">Materi :</h6>
                         <a class="collapse-item" href="buttons.html">Materi 1</a>
                         <a class="collapse-item" href="cards.html">Materi 2</a>
                         <a class="collapse-item" href="cards.html">Materi 3</a>
@@ -74,8 +74,8 @@
 
             <li class="nav-item ">
                 <a class="nav-link" href="">
-                    <i class="fas fa-address-card"></i>
-                    <span>Tentang Kita</span></a>
+                    <i class="fas fa-address-card" id="sidebar-icon"></i>
+                    <span id="sidebar-span">Tentang Kita</span></a>
             </li>
 
             <!-- Divider -->
